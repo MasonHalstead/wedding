@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
 import importedComponent from 'react-imported-component';
+import { Grid } from 'react-bootstrap';
 
 import Navigation from './Pages/Navigation';
 import Home from './Pages/Home';
@@ -18,18 +19,35 @@ const AsyncNoMatch = importedComponent(
     LoadingComponent: Loading
   }
 );
+const renderMergedProps = (component, ...rest) => {
+  const finalProps = Object.assign({}, ...rest);
+  return (
+    React.createElement(component, finalProps)
+  );
+};
+const PropsRoute = ({ component, ...rest }) => {
+  return (
+    <Route {...rest} render={routeProps => {
+      return renderMergedProps(component, routeProps, rest);
+    }}/>
+  );
+};
 
-const App = () => {
+const App = (props) => {
   return (
 
     <Router>
-      <div className="container-fluid">
-        <Navigation />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/dynamic" component={AsyncDynamicPage} />
-          <Route component={AsyncNoMatch} />
-        </Switch>
+      <div>
+        <div className="container-fluid">
+          <Navigation navigation={ props.general.navigation }/>
+        </div>
+        <Grid>
+          <Switch>
+            <PropsRoute exact path="/" component={Home} home={ props.general.home }/>
+            <PropsRoute exact path="/dynamic" component={AsyncDynamicPage} />
+            <PropsRoute component={AsyncNoMatch} />
+          </Switch>
+        </Grid>
       </div>
     </Router>
   );

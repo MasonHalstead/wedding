@@ -1,16 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import HomeHeader from './HomeHeader';
 import Layout from './Layout';
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <Layout>
-      <p>Hello World of React and Webpack!</p>
-      <p>
-        <Link to="/dynamic">Navigate to Dynamic Page</Link>
-      </p>
-    </Layout>
+    <HomeHeader header={ props.home.header }/>
   );
 };
 

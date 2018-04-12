@@ -1,0 +1,27 @@
+{
+    "navigation": {
+        "brand": {
+            "title": "React-Bootstrap",
+            "href": "/#"
+        },
+        "links": [
+            {
+                "title": "Home", 
+                "href": "/" 
+            },
+            { 
+                "title": "About", 
+                "href": "/dynamic"
+            },
+            { 
+                "title": "Pages", 
+                "href": "/"
+            }
+        ]
+    },
+    "home": {
+        "header": {
+            "title": "Something goes here"
+        }
+    }
+}
