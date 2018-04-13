@@ -2,10 +2,12 @@ import React from 'react';
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
 import importedComponent from 'react-imported-component';
 import { Grid } from 'react-bootstrap';
+import Flexbox from 'flexbox-react';
 
 import Navigation from './Pages/Navigation';
 import Home from './Pages/Home';
 import Loading from './Pages/Loading';
+import Footer from './Pages/Footer';
 
 const AsyncDynamicPage = importedComponent(
   () => import('./Pages/DynamicPage'),
@@ -35,20 +37,22 @@ const PropsRoute = ({ component, ...rest }) => {
 
 const App = (props) => {
   return (
-
     <Router>
-      <div>
-        <div className="container-fluid">
+      <React.Fragment>
+        <Flexbox flexDirection="column" minHeight="100vh">
           <Navigation navigation={ props.general.navigation }/>
-        </div>
-        <Grid>
-          <Switch>
-            <PropsRoute exact path="/" component={Home} home={ props.general.home }/>
-            <PropsRoute exact path="/dynamic" component={AsyncDynamicPage} />
-            <PropsRoute component={AsyncNoMatch} />
-          </Switch>
-        </Grid>
-      </div>
+          <Flexbox flexGrow={1}>
+            <Grid>
+              <Switch>
+                <PropsRoute exact path="/" component={Home} home={ props.general.home }/>
+                <PropsRoute exact path="/dynamic" component={AsyncDynamicPage} />
+                <PropsRoute component={AsyncNoMatch} />
+              </Switch>
+            </Grid>
+          </Flexbox>
+          <Footer footer={ props.general.footer }/>
+        </Flexbox>
+      </React.Fragment>
     </Router>
   );
 };

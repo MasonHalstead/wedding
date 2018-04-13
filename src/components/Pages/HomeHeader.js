@@ -20,12 +20,10 @@ const HomeHeader = (props) => {
 
   return (
     <Row className="show-grid">
-        <Col xs={12}>
-            <div>
-            <Image src={HeaderImage} responsive/>
-            { headerTitle }
-            </div>
-        </Col>
+        <div>
+        <Image src={HeaderImage} responsive/>
+        { headerTitle }
+        </div>
     </Row>
   );
 };

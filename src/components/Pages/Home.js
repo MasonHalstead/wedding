@@ -1,11 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import HomeHeader from './HomeHeader';
+import HomeWelcome from './HomeWelcome';
+import HomeStory from './HomeStory';
 import Layout from './Layout';
 
 const Home = (props) => {
   return (
-    <HomeHeader header={ props.home.header }/>
+    <React.Fragment>
+      <HomeHeader header={ props.home.header }/>
+      <HomeWelcome/>
+      <HomeStory/>
+    </React.Fragment>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { IndexLinkContainer } from "react-router-bootstrap";
 import { Link } from 'react-router-dom';
 
@@ -18,19 +18,17 @@ const Navigation = (props) => {
   );
 
   return (
-    <Row>
-      <Navbar inverse collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand>
-          <Link to={ props.navigation.brand.href }>{ props.navigation.brand.title }</Link>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          { navigationLinks }
-        </Navbar.Collapse>
-      </Navbar>
-    </Row>
+    <Navbar inverse collapseOnSelect>
+      <Navbar.Header>
+        <Navbar.Brand>
+        <Link to={ props.navigation.brand.href }>{ props.navigation.brand.title }</Link>
+        </Navbar.Brand>
+        <Navbar.Toggle />
+      </Navbar.Header>
+      <Navbar.Collapse>
+        { navigationLinks }
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
