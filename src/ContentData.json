@@ -5,23 +5,18 @@
             "href": "/#"
         },
         "links": [
-            {
-                "title": "Home", 
-                "href": "/" 
-            },
-            { 
-                "title": "About", 
-                "href": "/dynamic"
-            },
-            { 
-                "title": "Pages", 
-                "href": "/"
-            }
+            { "title": "Home","href": "/" },
+            { "title": "About","href": "/dynamic"},
+            { "title": "Pages","href": "/" }
         ]
     },
     "home": {
-        "header": {
-            "title": "Something goes here"
-        }
+      "header": {
+        "title": [
+          { "title": "Emily and Mason's Reception" },
+          { "title": "Join us for a celebration on"}
+        ],
+        "subtitle": "Saturday 6:00pm, August 25, 2018"
+      }
     }
 }
