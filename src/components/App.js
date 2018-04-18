@@ -4,19 +4,26 @@ import importedComponent from 'react-imported-component';
 import { Grid } from 'react-bootstrap';
 import Flexbox from 'flexbox-react';
 
-import Navigation from './Pages/Navigation';
-import Home from './Pages/Home';
-import Loading from './Pages/Loading';
-import Footer from './Pages/Footer';
+import Navigation from './global/Navigation';
+import Home from './home/Home';
+import Loading from './global/Loading';
+import Footer from './global/Footer';
+import RSVPModal from './global/RSVPModal';
 
-const AsyncDynamicPage = importedComponent(
-  () => import('./Pages/DynamicPage'),
+const AsyncGalleryPage = importedComponent(
+  () => import('./gallery/Gallery'),
+  {
+    LoadingComponent: Loading
+  }
+);
+const AsyncRegistryPage = importedComponent(
+  () => import('./registry/Registry'),
   {
     LoadingComponent: Loading
   }
 );
 const AsyncNoMatch = importedComponent(
-  () => import('./Pages/NoMatch'),
+  () => import('./global/NoMatch'),
   {
     LoadingComponent: Loading
   }
@@ -40,12 +47,13 @@ const App = (props) => {
     <Router>
       <React.Fragment>
         <Flexbox flexDirection="column" minHeight="100vh">
-          <Navigation navigation={ props.general.navigation }/>
+          <Navigation navigation={ props.general.navigation } modal={ props.general.modal }/>
           <Flexbox flexGrow={1}>
             <Grid>
               <Switch>
                 <PropsRoute exact path="/" component={Home} home={ props.general.home }/>
-                <PropsRoute exact path="/dynamic" component={AsyncDynamicPage} />
+                <PropsRoute exact path="/gallery" gallery={ props.general.gallery } component={AsyncGalleryPage} />
+                <PropsRoute exact path="/registry" registry={ props.general.registry } component={AsyncRegistryPage} />
                 <PropsRoute component={AsyncNoMatch} />
               </Switch>
             </Grid>

@@ -1,0 +1,104 @@
+{
+  "navigation": {
+      "brand": {
+          "title": "Emily & Mason's Wedding",
+          "href": "/"
+      },
+      "links": [
+          { "title": "Our Story","href": "/", "modal": false },
+          { "title": "Photo Gallery","href": "/gallery", "modal": false },
+          { "title": "Registry","href": "/registry", "modal": false },
+          { "title": "RSVP","href": "/", "modal": true }
+      ]
+  },
+  "home": {
+    "header": {
+      "title": [
+        { "title": "Emily and Mason's Reception" },
+        { "title": "Join us for a celebration on"}
+      ],
+      "subtitle": "Saturday 6:00pm, August 25, 2018"
+    }
+  },
+  "registry": {
+    "title": "Something here",
+    "tiles":[
+      { "title": "amazon",
+        "src": "https://static.xoedge.com/xo-registry/retailer/retailerImage6d8a21e8-a904-471f-a6f5-371b3af2a2e5.png", "href": "https://www.amazon.com/wedding/emily-von-lossow-mason-halstead-redmond-august-2018/registry/2PEGE8D9PVY8H" },
+        { "title": "westelm",
+          "src": "https://static.xoedge.com/xo-registry/retailer/retailerImage99d9144a-e4ca-4ce6-a055-9ab9099911a9.png", "href": "https://www.westelm.com/registry/100167503/registry-list.html?cm_ven=WedCh&bnrid=3900603&cm_ite=GiftGiver&cm_pla=WCSearchResults&cm_cat=Registry" },
+          { "title": "potterybarn",
+            "src": "https://static.xoedge.com/xo-registry/retailer/retailerImageedc6668d-34ea-4fdd-8bdc-6582c3f93c41.png", "href": "https://www.potterybarn.com/registry/100256989/registry-list.html?cm_ven=WedCh&bnrid=3340801&cm_ite=GiftGiver&cm_pla=WCSearchResults&cm_cat=Registry" }
+    ]
+  },
+  "modal": {
+    "RSVP": {
+      "title": "RSVP",
+      "subtitle":[
+        { "title": "We hope you can join us!" },
+        { "title": "Please enter your name below."}
+      ]
+    }
+  },
+  "gallery": {
+    "title": "Something Here",
+    "images": [{
+      "src": "https://i.imgur.com/5IjBy6V.jpg",
+      "thumbnail": "https://i.imgur.com/5IjBy6Vl.jpg",
+      "thumbnailWidth": 384,
+      "thumbnailHeight": 255
+    },
+    {
+      "src": "https://i.imgur.com/D4z2l0H.jpg",
+      "thumbnail": "https://i.imgur.com/D4z2l0Hl.jpg",
+      "thumbnailWidth": 384,
+      "thumbnailHeight": 255
+    },
+    {
+      "src": "https://i.imgur.com/SDNR9gm.jpg",
+      "thumbnail": "https://i.imgur.com/SDNR9gml.jpg",
+      "thumbnailWidth": 384,
+      "thumbnailHeight": 255
+    },
+    {
+      "src": "https://i.imgur.com/xlPbAbt.jpg",
+      "thumbnail": "https://i.imgur.com/xlPbAbtl.jpg",
+      "thumbnailWidth": 384,
+      "thumbnailHeight": 255
+    },
+    {
+      "src": "https://i.imgur.com/is3vRl0.jpg",
+      "thumbnail": "https://i.imgur.com/is3vRl0l.jpg",
+      "thumbnailWidth": 384,
+      "thumbnailHeight": 255
+    },
+    {
+      "src": "https://i.imgur.com/nUXOWhD.jpg",
+      "thumbnail": "https://i.imgur.com/nUXOWhDl.jpg",
+      "thumbnailWidth": 255,
+      "thumbnailHeight": 384
+    },
+    {
+      "src": "https://i.imgur.com/ZVVGL87.jpg",
+      "thumbnail": "https://i.imgur.com/ZVVGL87l.jpg",
+      "thumbnailWidth": 384,
+      "thumbnailHeight": 255
+    },
+    {
+      "src": "https://i.imgur.com/uXzULyE.jpg",
+      "thumbnail": "https://i.imgur.com/uXzULyEl.jpg",
+      "thumbnailWidth": 384,
+      "thumbnailHeight": 255
+    },
+    {
+      "src": "https://i.imgur.com/WLwVh8S.jpg",
+      "thumbnail": "https://i.imgur.com/WLwVh8Sl.jpg",
+      "thumbnailWidth": 384,
+      "thumbnailHeight": 255
+    }]
+  },
+  "footer": {
+      "copyright": "asjh asdhasdh ",
+      "designer": "sfhs dfhfskj f"
+  }
+}

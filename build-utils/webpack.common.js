@@ -17,10 +17,6 @@ const config = {
         use: ['babel-loader']
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        loader: "file-loader?name=public/images/[name].[ext]"
-      },
-      {
         test: /\.scss$/,
         use: [
           {
@@ -31,6 +27,21 @@ const config = {
           },
           {
             loader: "sass-loader" // compiles Sass to CSS
+          }
+        ]
+      },
+      {
+        test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
+        loader: "file-loader"
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: './images/[name].[ext]'
+            }
           }
         ]
       },
@@ -51,7 +62,9 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'public/index.html',
-      favicon: 'public/favicon.ico'
+      favicon: 'public/favicon.ico',
+      title: 'webpack for react',
+      minify: false
     })
   ]
 };
