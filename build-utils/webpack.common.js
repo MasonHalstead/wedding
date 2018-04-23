@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const config = {
   entry: {
-    vendor: ['semantic-ui-react', 'react-bootstrap']
+    vendor: ['react-bootstrap']
   },
   output: {
     path: commonPaths.outputPath,

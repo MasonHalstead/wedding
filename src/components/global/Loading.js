@@ -1,9 +1,14 @@
 import React from 'react';
-import { Loader } from 'semantic-ui-react';
 import ReactDelayRender from 'react-delay-render';
 
-const Loading = () =>
+const Loading = (props) => {
 
-<Loader active size="massive" />;
+  return (
+    <div className="component-container text-center">
+      <p><i className="fas fa-spinner fa-spin"></i> Loading...</p>
+    </div>
+  );
+};
 
 export default ReactDelayRender({ delay: 300 })(Loading);
+

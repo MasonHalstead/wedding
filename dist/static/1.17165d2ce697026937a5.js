@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{289:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var u,l=t(0),a=(u=l)&&u.__esModule?u:{default:u},o=t(128);n.default=function(){return a.default.createElement(a.default.Fragment,null,a.default.createElement(o.Icon,{name:"minus circle",size:"big"}),a.default.createElement("strong",null,"Page not found!"))}}}]);
-//# sourceMappingURL=1.17165d2ce697026937a5.js.map
