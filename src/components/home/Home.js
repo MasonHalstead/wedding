@@ -6,12 +6,15 @@ import HomeStory from './HomeStory';
 import HomeGallery from './HomeGallery';
 
 const Home = (props) => {
+  var style = {
+    width: 100
+  }
   return (
     <React.Fragment>
-      <HomeHeader header={ props.home.header }/>
-      <HomeWelcome/>
-      <HomeStory/>
-      <HomeGallery/>
+      <HomeHeader style={style} header={ props.home.header } modal={ props.modal }/>
+      <HomeWelcome style={style} welcome={ props.home.welcome }/>
+      <HomeStory style={style} story={ props.home.story }/>
+      <HomeGallery style={style}/>
     </React.Fragment>
   );
 };

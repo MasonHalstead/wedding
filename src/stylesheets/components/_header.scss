@@ -1,0 +1,27 @@
+.header-container {
+  position: relative;
+}
+.header-box {
+  position: absolute;
+  margin: 25px 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header-box h1 {
+  margin: 25px 0px;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 1px;
+  font-size: 54px;
+  line-height: 1.2;
+  color: #fff;
+}
+.header-box small {
+  color: #fff;
+}
+.header-image-full {
+  display: block;
+}
+.header-image-small {
+  display: none;
+}

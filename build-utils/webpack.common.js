@@ -12,11 +12,6 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(js)$/,
-        exclude: /node_modules/,
-        use: ['babel-loader']
-      },
-      {
         test: /\.scss$/,
         use: [
           {
@@ -31,7 +26,7 @@ const config = {
         ]
       },
       {
-        test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
+        test: /\.woff2?$|\.ttf$|\.eot$/,
         loader: "file-loader"
       },
       {
@@ -44,6 +39,11 @@ const config = {
             }
           }
         ]
+      },
+      {
+        test: /\.(js)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
       },
     ],
   },
@@ -63,7 +63,7 @@ const config = {
     new HtmlWebpackPlugin({
       template: 'public/index.html',
       favicon: 'public/favicon.ico',
-      title: 'webpack for react',
+      title: "Emily & Mason's Wedding",
       minify: false
     })
   ]

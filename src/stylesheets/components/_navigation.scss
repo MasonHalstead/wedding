@@ -1,6 +1,9 @@
-.navbar-header a.navbar-brand, .navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-header a.navbar-brand, .navbar-inverse .navbar-nav>li>a {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 11px;
   z-index: 1;
+}
+.navbar-default .navbar-brand:hover {
+  color: #ffffff;
 }

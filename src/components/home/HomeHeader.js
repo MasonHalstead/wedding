@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col, Image } from 'react-bootstrap';
+import { Image, Button, Row } from 'react-bootstrap';
+import RSVPModal from '../global/RSVPModal';
 import HeaderImage from '../../images/landing-banner.jpg';
+import HeaderImageSmall from '../../images/landing-banner-sm.jpg';
 
 const HomeHeader = (props) => {
   const headerTitle = (
@@ -19,12 +21,14 @@ const HomeHeader = (props) => {
   );
 
   return (
-    <Row className="show-grid">
-        <div>
-        <Image src={HeaderImage} responsive/>
+    <div className="header-container">
+    <Image className="header-image-full" src={HeaderImage} responsive/>
+    <Image className="header-image-small" src={HeaderImageSmall} responsive/>
+      <div className="header-box text-left">
         { headerTitle }
-        </div>
-    </Row>
+        <RSVPModal modal={props.modal.RSVP} button={true} />
+      </div>
+    </div>
   );
 };
 

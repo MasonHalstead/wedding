@@ -1,26 +1,22 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-import { IndexLinkContainer } from "react-router-bootstrap";
 import { Link } from 'react-router-dom';
+import { Krowdspace } from '../../images/krowdspace.js';
 
 const Footer = (props) => {
-  var width = {
-    float: "none"
-  };
-  var float = {
-    float: "right"
-  };
+
+  var date = new Date();
+
   return (
-    <Navbar>
-      <Navbar.Header style={width}>
-        <Navbar.Brand>
-          { props.footer.copyright }
-        </Navbar.Brand>
-        <Navbar.Brand style={float}>
-        { props.footer.designer }
-        </Navbar.Brand>
-      </Navbar.Header>
-    </Navbar>
+    <footer className="component-container">
+      <div className="container">
+      <a href={ props.footer.href }>
+        <p className="copyright">{ props.footer.designer } { date.getFullYear() }</p>
+      </a>
+      <a href={ props.footer.href }>
+        <p className="copyright-design"><Krowdspace height="24" /></p>
+      </a>
+      </div>
+    </footer>
   );
 };
 export default Footer;

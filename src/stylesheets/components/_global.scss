@@ -1,3 +1,94 @@
 :focus {
   outline: none!important;
 }
+.container-fluid{
+  max-width: 1200px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.component-container {
+  margin-top: 75px;
+}
+.component-container-small {
+  margin-top: 25px;
+}
+h2 {
+  font-family: 'Lato', sans-serif;
+  margin-top: 0px;
+}
+h3{
+  font-family: 'Lato', sans-serif;
+  margin-top: 0px;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+.btn {
+  padding: 11px 22px;
+  letter-spacing: 1px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.has-success .form-control, .has-success .form-control:focus-within, .has-success .form-control:active {
+  border-color: #ccc;
+}
+.has-error .form-control, .has-error .form-control:focus-within, .has-error .form-control:active {
+  border-color: #ccc;
+}
+.custom-modal {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-header{
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  opacity: 1;
+  top: 5px;
+  right: 8px;
+  color: #edb0b0;
+  font-size: 20px;
+}
+.modal-close:hover {
+  color: #edb0b0;
+  opacity: .8;
+  cursor: pointer;
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
+.modal-header .rsvp-title {
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+.modal-title p {
+  margin: 0px;
+  font-size: 16px;
+  text-align: center;
+}
+.modal-body form {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-button {
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-rsvp {
+  text-align: center;
+  margin: 15px 0px;
+  font-size: 16px;
+}
+.story-flex, .gallery-flex, .welcome-flex {
+  margin-left: 15px;
+  margin-right: 15px;
+}

@@ -184,8 +184,8 @@ class RSVPForm extends React.Component {
           />
           <FormControl.Feedback />
         </FormGroup>
-        <p>Please RSVP by July 7th, 2018.</p>
-        <Button type="submit">Confirm RSVP</Button>
+        <p className="modal-rsvp">Please RSVP by August 1st, 2018.</p>
+        <Button bsStyle="primary" className="modal-button" type="submit">Confirm RSVP</Button>
       </form>
     );
   }

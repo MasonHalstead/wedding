@@ -18,6 +18,24 @@
         { "title": "Join us for a celebration on"}
       ],
       "subtitle": "Saturday 6:00pm, August 25, 2018"
+    },
+    "welcome": {
+      "title": "Welcome to our Wedding Celebration!",
+      "text": [
+        { "key": 1, "text": "Dress - Cocktail Attire" },
+        { "key": 2, "text": "RSVP - Please RSVP by August 1st, 2018"},
+        { "key": 3, "text": "Address - 20430 NE 108th St, Redmond, WA 98052"},
+        { "key": 4, "text": "Parking - Guests can park in the gravel lot below Overlake High School. We will have a shuttle that can pick you up and bring you back to your car. Please <a href='/images/directions.jpg'>view our parking map</a> for detailed instructions."}
+      ]
+    },
+    "story": {
+      "title": "Our Story",
+      "bride": {
+        "bride": "Bride", "name": "Emily von Lossow", "text": "We grew up minutes from each other in Woodinville, WA and attended the same elementary school and high school. We didn’t know each other very well, despite having many friends in common, but have held on fondly to memories over the years as our paths crossed. Little did we know that we would get to relive those memories with each other eight years after graduating high school! We reconnected and became instant best friends. We knew that our relationship was something special."
+      },
+      "groom": {
+        "groom": "Groom", "name": "Mason Halstead", "text": "We embarked on our first international trip together in August 2017 and it was certainly the most exciting and memorable vacation yet! Mason knew that he wanted to pop the question in Spain. He didn’t have a plan, but knew that the perfect time would reveal itself while exploring Barcelona. After a walk through the city and a beautiful hike up Bunker del Carmel, Mason kneeled down on one knee and proposed with the gorgeous backdrop of the city below. Emily said “Yes” and the rest of the trip was a perfect celebration of our relationship and the exciting adventures ahead of us."
+      }
     }
   },
   "registry": {
@@ -49,16 +67,40 @@
       "thumbnailHeight": 255
     },
     {
+      "src": "https://i.imgur.com/0AKqXIq.jpg",
+      "thumbnail": "https://i.imgur.com/0AKqXIqm.jpg",
+      "thumbnailWidth": 320,
+      "thumbnailHeight": 240
+    },
+    {
+      "src": "https://i.imgur.com/AXnd0eK.jpg",
+      "thumbnail": "https://i.imgur.com/AXnd0eKm.jpg",
+      "thumbnailWidth": 240,
+      "thumbnailHeight": 320
+    },
+    {
       "src": "https://i.imgur.com/D4z2l0H.jpg",
       "thumbnail": "https://i.imgur.com/D4z2l0Hl.jpg",
       "thumbnailWidth": 384,
       "thumbnailHeight": 255
     },
     {
+      "src": "https://i.imgur.com/GfWqLrN.jpg",
+      "thumbnail": "https://i.imgur.com/GfWqLrNm.jpg",
+      "thumbnailWidth": 240,
+      "thumbnailHeight": 320
+    },
+    {
       "src": "https://i.imgur.com/SDNR9gm.jpg",
       "thumbnail": "https://i.imgur.com/SDNR9gml.jpg",
       "thumbnailWidth": 384,
       "thumbnailHeight": 255
+    },
+    {
+      "src": "https://i.imgur.com/MDcXiak.jpg",
+      "thumbnail": "https://i.imgur.com/MDcXiakm.jpg",
+      "thumbnailWidth": 240,
+      "thumbnailHeight": 320
     },
     {
       "src": "https://i.imgur.com/xlPbAbt.jpg",
@@ -73,6 +115,12 @@
       "thumbnailHeight": 255
     },
     {
+      "src": "https://i.imgur.com/f859Lmc.jpg",
+      "thumbnail": "https://i.imgur.com/f859Lmcm.jpg",
+      "thumbnailWidth": 240,
+      "thumbnailHeight": 320
+    },
+    {
       "src": "https://i.imgur.com/nUXOWhD.jpg",
       "thumbnail": "https://i.imgur.com/nUXOWhDl.jpg",
       "thumbnailWidth": 255,
@@ -83,6 +131,12 @@
       "thumbnail": "https://i.imgur.com/ZVVGL87l.jpg",
       "thumbnailWidth": 384,
       "thumbnailHeight": 255
+    },
+    {
+      "src": "https://i.imgur.com/US89RKK.jpg",
+      "thumbnail": "https://i.imgur.com/US89RKKm.jpg",
+      "thumbnailWidth": 240,
+      "thumbnailHeight": 320
     },
     {
       "src": "https://i.imgur.com/uXzULyE.jpg",
@@ -98,7 +152,7 @@
     }]
   },
   "footer": {
-      "copyright": "asjh asdhasdh ",
-      "designer": "sfhs dfhfskj f"
+      "designer": "© Krowdspace Design",
+      "href": "https://www.krowdspace.com"
   }
 }

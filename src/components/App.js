@@ -45,13 +45,12 @@ const PropsRoute = ({ component, ...rest }) => {
 const App = (props) => {
   return (
     <Router>
-      <React.Fragment>
         <Flexbox flexDirection="column" minHeight="100vh">
           <Navigation navigation={ props.general.navigation } modal={ props.general.modal }/>
           <Flexbox flexGrow={1}>
-            <Grid>
+          <Grid fluid={ true }>
               <Switch>
-                <PropsRoute exact path="/" component={Home} home={ props.general.home }/>
+                <PropsRoute exact path="/" component={Home} home={ props.general.home } modal={ props.general.modal }/>
                 <PropsRoute exact path="/gallery" gallery={ props.general.gallery } component={AsyncGalleryPage} />
                 <PropsRoute exact path="/registry" registry={ props.general.registry } component={AsyncRegistryPage} />
                 <PropsRoute component={AsyncNoMatch} />
@@ -60,7 +59,6 @@ const App = (props) => {
           </Flexbox>
           <Footer footer={ props.general.footer }/>
         </Flexbox>
-      </React.Fragment>
     </Router>
   );
 };

@@ -1,0 +1,26 @@
+footer {
+ height: 50px;
+ background: #292929;
+}
+.copyright{
+  font-family: "Raleway";
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-size: 11px;
+  z-index: 1;
+  float: left;
+  margin: 0px;
+  padding: 17px 15px 17px 0px;
+}
+.copyright-design {
+  float: right;
+  fill: #fff;
+  margin: 0px;
+  padding: 14px 0px 0px 15px;
+}
+.copyright:hover, .copyright-design:hover{
+  fill: #edb0b0;
+  color: #edb0b0;
+}

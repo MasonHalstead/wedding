@@ -1,17 +1,25 @@
 // Global
 
 $font-family-sans-serif:  'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$brand-primary: darken(#edb0b0, 6.5%) !default;
+$brand-primary:#edb0b0 !default;
 
 // Navigation Inverse
 
 $navbar-border-radius: 0px !default;
+$navbar-margin-bottom: 0px !default;
+
 $navbar-inverse-link-color: #fff !default;
 $navbar-inverse-bg: #292929 !default;
-$navbar-margin-bottom: 0px !default;
 $navbar-inverse-brand-hover-color: #edb0b0 !default;
 $navbar-inverse-link-hover-color: #edb0b0 !default;
 $navbar-inverse-link-active-bg: transparent !default;
 $navbar-inverse-toggle-icon-bar-bg: #edb0b0 !default;
 $navbar-inverse-toggle-hover-bg: transparent !default;
 $navbar-inverse-toggle-border-color: transparent !default;
+
+// Buttons
+
+$btn-font-weight: 600 !default;
+
+$state-success-text: #edb0b0 !default;
+$state-danger-text: #edb0b0 !default;

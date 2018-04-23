@@ -1,24 +1,26 @@
 import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
-import HeaderImage from '../../images/landing-banner.jpg';
+import WelcomeImage from '../../images/welcome-image.jpg';
+import ParkingImage from '../../images/directions.jpg';
 import Flexbox from 'flexbox-react';
 
 const HomeWelcome = (props) => {
-    var width = {
-        width: '400px'
-    };
   return (
-    <Row className="show-grid">
-        <Flexbox flexDirection="row" justifyContent="space-between">
+    <React.Fragment>
+        <Flexbox className="component-container welcome-flex">
         <div >
-            <Image src={HeaderImage} style={width}/>
+            <Image className="welcome-image" src={WelcomeImage}/>
         </div>
-        <div>
-          <h2>Welcome to our Wedding Celebration!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div className="welcome-container">
+          <h2>{ props.welcome.title }</h2>
+          {props.welcome.text.map((welcome) =>
+            <p key={welcome.text} dangerouslySetInnerHTML={{__html: welcome.text}}>
+
+            </p>
+          )}
         </div>
         </Flexbox>
-    </Row>
+    </React.Fragment>
   );
 };
 

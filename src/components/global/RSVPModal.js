@@ -12,6 +12,7 @@ class RSVPModal extends React.Component {
 
     this.state = {
       show: false,
+      button: this.props.button
 
     };
   }
@@ -27,22 +28,30 @@ class RSVPModal extends React.Component {
   render() {
     return (
       <React.Fragment>
+      { this.state.button
+        ?
+        <Button bsStyle="primary" onClick={this.handleShow}>Make Sure to RSVP</Button>
+        :
         <NavItem onClick={this.handleShow}>RSVP</NavItem>
+      }
         <Modal
           show={this.state.show}
           onHide={this.handleHide}
           dialogClassName="custom-modal"
           backdrop='static'
         >
-          <Modal.Header closeButton onClick={this.handleHide}>
-            <Modal.Title id="contained-modal-title-lg">
-              {this.props.modal.title}
+          <Modal.Header>
+            <Modal.Title id="contained-modal-title-lg" className="text-center">
+              <p className="rsvp-title">{this.props.modal.title}</p>
+              {this.props.modal.subtitle.map((text) =>
+                <p key={text.title}>{text.title}</p>
+              )}
             </Modal.Title>
+            <span className="modal-close" onClick={this.handleHide}>
+            <i className="fas fa-times"></i>
+            </span>
           </Modal.Header>
           <Modal.Body>
-            {this.props.modal.subtitle.map((text) =>
-              <p key={text.title}>{text.title}</p>
-            )}
             <RSVPForm />
           </Modal.Body>
           <Modal.Footer>

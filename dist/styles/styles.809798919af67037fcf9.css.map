@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/components/Pages/Layout.css"],"names":[],"mappings":"AAAA,uBACE,aACA,wBAA0B,CAG5B,yBACE,0BACA,4BAA+B","file":"styles/styles.809798919af67037fcf9.css","sourcesContent":[".pull-right {\n  display: flex;\n  justify-content: flex-end;\n}\n\n.h1 {\n  margin-top: 10px !important;\n  margin-bottom: 20px !important;\n}\n"],"sourceRoot":""}

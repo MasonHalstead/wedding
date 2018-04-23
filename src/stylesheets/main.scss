@@ -1,6 +1,7 @@
-@import 'utilities/all';
 @import 'base/all';
-@import 'components/all';
 
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import 'utilities/all';
+@import 'components/all';

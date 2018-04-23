@@ -4,10 +4,9 @@ import RegistryTile from './RegistryTile';
 const Registry = (props) => {
 
   return (
-    <React.Fragment>
-      <h1>Registry</h1>
+    <div className="component-container">
       <RegistryTile tiles={ props.registry.tiles }/>
-    </React.Fragment>
+    </div>
   );
 };
 
