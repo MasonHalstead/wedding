@@ -33,15 +33,48 @@
   .welcome-container {
     margin-left: 0px;
   }
+  .welcome-container h2 {
+    margin-bottom: 15px;
+  }
 }
 @media only screen and (max-width: 650px) {
-
+  .header-box h1 {
+    margin: 25px 0px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #fff;
+  }
+  .header-box small {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color: #fff;
+  }
+  .wedding-couple {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+  }
   .header-image-full {
     display: none;
   }
   .header-image-small {
     display: block;
+    min-height: 275px;
   }
+  .modal-dialog{
+    margin: 0px;
+  }
+  .custom-modal {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-content {
+  border-radius: 0px;
+  border: none;
+}
   .story-container-right {
     margin-top: 25px;
     margin-left: 0px;
