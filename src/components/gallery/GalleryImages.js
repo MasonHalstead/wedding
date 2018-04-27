@@ -4,7 +4,7 @@ import { Row } from 'react-bootstrap';
 
 const GalleryImages = (props) => {
   return (
-    <Row id="image-gallery">
+    <Row>
     <Gallery enableImageSelection={ false } images={props.images}/>
     </Row>
   );

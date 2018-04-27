@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
+    "es6-promise": "^4.2.4",
     "flexbox-react": "^4.4.0",
     "react": "^16.3.2",
     "react-bootstrap": "^0.32.1",

@@ -4,8 +4,8 @@ import GalleryImages from './GalleryImages';
 const Gallery = (props) => {
 
   return (
-    <div className="component-container">
-      <GalleryImages className="component-container" images={ props.gallery.images }/>
+    <div className="container component-container">
+      <GalleryImages images={ props.gallery.images }/>
     </div>
   );
 };

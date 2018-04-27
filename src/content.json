@@ -22,10 +22,11 @@
     "welcome": {
       "title": "Welcome to our Wedding Celebration!",
       "text": [
-        { "key": 1, "text": "Dress - Cocktail Attire" },
-        { "key": 2, "text": "RSVP - Please RSVP by August 1st, 2018"},
-        { "key": 3, "text": "Address - 20430 NE 108th St, Redmond, WA 98052"},
-        { "key": 4, "text": "Parking - Guests can park in the gravel lot below Overlake High School. We will have a shuttle that can pick you up and bring you back to your car. Please <a href='/images/directions.jpg'>view our parking map</a> for detailed instructions."}
+        { "key": 1, "text": "Date - Saturday 6:00pm, August 25, 2018" },
+        { "key": 2, "text": "Address - 20430 NE 108th St, Redmond, WA 98052"},
+        { "key": 3, "text": "RSVP - Please RSVP by August 1st, 2018"},
+        { "key": 4, "text": "Dress - Cocktail Attire" },
+        { "key": 5, "text": "Parking - Guests can park in the gravel lot below Overlake High School. We will have a shuttle that can pick you up and bring you back to your car. Please <a href='/images/directions.jpg'>view our parking map</a> for detailed instructions."}
       ]
     },
     "story": {
@@ -85,16 +86,16 @@
       "thumbnailHeight": 255
     },
     {
-      "src": "https://i.imgur.com/GfWqLrN.jpg",
-      "thumbnail": "https://i.imgur.com/GfWqLrNm.jpg",
-      "thumbnailWidth": 240,
-      "thumbnailHeight": 320
-    },
-    {
       "src": "https://i.imgur.com/SDNR9gm.jpg",
       "thumbnail": "https://i.imgur.com/SDNR9gml.jpg",
       "thumbnailWidth": 384,
       "thumbnailHeight": 255
+    },
+    {
+      "src": "https://i.imgur.com/GfWqLrN.jpg",
+      "thumbnail": "https://i.imgur.com/GfWqLrNm.jpg",
+      "thumbnailWidth": 240,
+      "thumbnailHeight": 320
     },
     {
       "src": "https://i.imgur.com/MDcXiak.jpg",
@@ -133,6 +134,12 @@
       "thumbnailHeight": 255
     },
     {
+      "src": "https://i.imgur.com/IdhxXNo.jpg",
+      "thumbnail": "https://i.imgur.com/IdhxXNom.jpg",
+      "thumbnailWidth": 240,
+      "thumbnailHeight": 320
+    },
+    {
       "src": "https://i.imgur.com/US89RKK.jpg",
       "thumbnail": "https://i.imgur.com/US89RKKm.jpg",
       "thumbnailWidth": 240,
@@ -143,6 +150,12 @@
       "thumbnail": "https://i.imgur.com/uXzULyEl.jpg",
       "thumbnailWidth": 384,
       "thumbnailHeight": 255
+    },
+    {
+      "src": "https://i.imgur.com/S10xM3a.jpg",
+      "thumbnail": "https://i.imgur.com/S10xM3am.jpg",
+      "thumbnailWidth": 240,
+      "thumbnailHeight": 320
     },
     {
       "src": "https://i.imgur.com/WLwVh8S.jpg",

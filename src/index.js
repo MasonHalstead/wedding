@@ -1,11 +1,11 @@
 require('./stylesheets/main.scss');
+require('es6-promise').polyfill();
 
 import { AppContainer } from 'react-hot-loader';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
 import general from './content.json';
-
 
 const render = Component =>
   ReactDOM.render(
